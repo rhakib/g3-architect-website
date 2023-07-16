@@ -4,19 +4,20 @@
 }
 
 .btn-primary{
-    padding: 15px 15px;
+    padding: 20px 25px;
     background-color: #FF900E;
     border-radius: 5px;
     color: white;
     font-weight: 600;
     font-size: 1.2rem;
     border: none;
+    cursor: pointer;
 }
 
 /* header styles */
 header{
     background: rgba(255, 144, 14, 0.10);
-    height: 1300px;
+    
     padding: 50px 100px;
 }
 
@@ -61,4 +62,33 @@ nav li a{
 }
 .banner-des{
     color: #727272;
+}
+.banner img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* responsive styles */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    
+    header{
+        padding: 5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding: 30px;
+    }
 }
