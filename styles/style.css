@@ -3,6 +3,15 @@
     font-family: 'Work Sans';
 }
 
+.text-grey {
+    color: #727272;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 .btn-primary {
     padding: 20px 25px;
     background-color: #FF900E;
@@ -47,11 +56,6 @@ nav li a {
 
 }
 
-.nav-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
 /* banner styles */
 .banner-info {
     max-width: 800px;
@@ -65,9 +69,6 @@ nav li a {
     color: #131313;
 }
 
-.banner-des {
-    color: #727272;
-}
 
 .banner img {
     width: 100%;
@@ -86,7 +87,6 @@ main {
 .teams-container {
     display: flex;
     align-items: center;
-    /* margin-top: 60px; */
     padding: 85px 100px 0px 150px;
 
 }
@@ -129,8 +129,31 @@ main {
     line-height: 26px;
 }
 
+/* facts card styles */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container .cards {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+    
+    
 
-
+}
+.card-title{
+    font-size: 1.25rem;
+    color: #727272;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.cards-stats{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0px;
+}
 
 /* responsive styles */
 /* mobile devices */
@@ -140,12 +163,18 @@ main {
         padding: 5px;
     }
 
-    nav, .teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
-    .teams-img-container{
-        grid-template-columns: repeat(1,1fr);
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
         margin-right: 50px;
+    }
+
+    .teams-info {
+        padding: 0px;
     }
 }
 
@@ -153,18 +182,25 @@ main {
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
-    nav, .teams-container {
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 
     header {
         padding: 30px;
     }
-    .banner img{
+
+    .banner img {
         width: 80%;
         margin: 20px 75px;
     }
-    .teams-img-container{
+
+    .teams-img-container {
         margin-right: 50px;
+    }
+
+    .teams-info {
+        padding: 0px;
     }
 }
